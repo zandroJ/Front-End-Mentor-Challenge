@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'Figtree';
+  src: url('/assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  background-color: #F5D04E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Figtree', sans-serif;
+}
+
+.card-container {
+  max-width: 400px;
+  margin: 0 auto; /* Center the card horizontally */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.card-image {
+  width: 100%; /* Make the image responsive */
+  border-radius: 8px;
+}
+
+.learning-label {
+  background-color: #F5D04E;
+  color: #000;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.short-desc {
+  font-size: 14px;
+  color: #777;
+  margin: 8px 0;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-name {
+  font-size: 14px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    max-width: 90%; /* Reduce width to fit smaller screens */
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 20px; /* Adjust font sizes for readability */
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .profile-image {
+    width: 35px; /* Reduce profile image size */
+    height: 35px;
+  }
+
+  .profile-name {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    padding: 10px; /* Add more compact padding */
+  }
+
+  .learning-label {
+    font-size: 10px; /* Adjust font size for the label */
+    padding: 3px 6px;
+  }
+
+  .card-title {
+    font-size: 18px; /* Make the title smaller */
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+
+  .short-desc {
+    font-size: 12px;
+  }
+}
